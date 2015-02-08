@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libkmod
+Description: Library to deal with kernel modules
+Version: 16
+Libs: -L${libdir} -lkmod
+Libs.private:  -L/home/htkim84/work/fsl-release-bsp/build/tmp/sysroots/imx6dlsabresd/usr/lib -lz 
+Cflags: -I${includedir}

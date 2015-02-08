@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt5
+
+
+Name: Qt5 DBus
+Description: Qt DBus module
+Version: 5.2.1
+Libs: -L${libdir} -lQt5DBus 
+Libs.private: -L${libdir} -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtDBus -I${includedir}
+Requires: Qt5Core
+
