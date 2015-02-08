@@ -1,0 +1,2 @@
+# rootfs
+yocto rootfs recomposition
